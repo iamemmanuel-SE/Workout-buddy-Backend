@@ -15,7 +15,7 @@ const app = express()
 app.use(express.json())
 
 app.use(cors({
-    origin: "https://workoutmybuddy.onrender.com/"
+    origin: "https://workoutmybuddy-app.onrender.com/"
 }));
 
 app.use((req, res, next) => {

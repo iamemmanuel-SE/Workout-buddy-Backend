@@ -14,12 +14,7 @@ const app = express()
 // middleware
 app.use(express.json())
 
-app.use(
-    cors({
-        origin: ["http://localhost:3000",
-        "https://workoutmybuddy.onrender.com"],
-    })
-    );
+app.use(cors());
 
 app.use((req, res, next) => {
     // res.setHeader("Access-Control-Allow-Credentials", "true")

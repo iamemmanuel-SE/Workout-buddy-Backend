@@ -14,7 +14,12 @@ const app = express()
 // middleware
 app.use(express.json())
 
-app.use(cors());
+app.use(cors({
+    origin: 'https://workoutmybuddy.onrender.com/',
+    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+    credentials: true, // If you need to include cookies in your requests
+
+}));
 
 app.use((req, res, next) => {
     // res.setHeader("Access-Control-Allow-Credentials", "true")

@@ -33,7 +33,7 @@ app.use('/api/user', userRoutes)
 
 // connect to db
 mongoose.connect(process.env.MONGO_URI)
-.then(()=> {git 
+.then(()=> {
 //listen for requests
 app.listen(process.env.PORT, () => {
     console.log('connected to db and listening on port 1100')

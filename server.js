@@ -15,7 +15,7 @@ const app = express()
 app.use(express.json())
 
 app.use(cors({
-    origin: 'https://poetic-liger-003278.netlify.app/',
+    origin: 'https://poetic-liger-003278.netlify.app',
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     credentials: true, // If you need to include cookies in your requests
 
